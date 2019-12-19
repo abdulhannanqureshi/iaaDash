@@ -1,0 +1,60 @@
+<header class="header-main">
+    	<div class="container-fluid p-0">
+        	<nav class="navbar navbar-expand-lg navbar-light p-0">
+            	<a class="navbar-brand" href="#"><img src="http://192.168.1.27/iaa_latest/public/admin_assets/images/other/img_logo.png" alt="IAA" class="img-fluid"><span>Indian Aviation Academy</span></a>
+            	<div class=" navbar-collapse" id="navbarSupportedContent">
+                	<ul class="navbar-nav mr-auto ">
+                    	<li class="nav-item">
+                        	<a id="toggle-sidebar" class="colleps-icon" href="#">
+                            	<img src="http://192.168.1.27/iaa_latest/public/admin_assets/images/icons/collapse-02.png" alt="menu">
+                        	</a>
+                          	<span class="dashboard-heading">Dashboard</span>
+                    	</li>
+                	</ul>
+                 	<ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown notification-dropdown">
+                           <a  [matMenuTriggerFor]="menu" class="nav-link dropdown-toggle for-bedge" href="#" id="navbarDropdown">
+                                <img src="http://192.168.1.27/iaa_latest/public/admin_assets/images/icons/notification.png" alt="Notification">
+                                <span class="badge badge-pill badge-warning" id="unread_count_show" style="display: none;"></span>
+                            </a> 
+                            <mat-menu #menu="matMenu">
+                                <div mat-menu-item class="not-head">
+                                    <h6 class="dropdown-header m-0 text-uppercase"><span class="grey darken-2">Notifications</span></h6>
+                                </div>
+                                <div mat-menu-item class="not-body scrollable-container w-100">
+                                    <div class="media-list" id="unread_list_show">
+                                            <a href="javascript:void(0)">
+                                                <div class="media">
+                                                    <div class="media-left align-self-top">
+                                                        <i class="far fa-comments"></i>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="notification-text">No Record Found.</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                            </mat-menu>
+                        </li>
+                   		<li class="nav-item dropdown">
+                        	<a mat-button [matMenuTriggerFor]="menuPro" class="nav-link dropdown-toggle" >
+                         	Admin
+								<img src="http://192.168.1.27/iaa_latest/public/uploads/admin/staff_images/indexjpegjpeg.jpeg" class="img-fluid" alt="User Pic">
+							</a>
+                              <mat-menu #menuPro="matMenu"  >
+                    	            
+                                <a mat-menu-item class="dropdown-item" href="#">Profile</a>
+	                            <a mat-menu-item class="dropdown-item" href="#">Change Password</a>
+                      			<a mat-menu-item class="dropdown-item" href="#">Role Management</a>
+                        		<a mat-menu-item class="dropdown-item" href="#">Logout</a>
+                        </mat-menu>
+
+                    	</li>
+                	</ul>
+            	</div> 
+       		</nav>
+    	</div>
+	</header>
+	<!-- header End  -->
+	

@@ -1,0 +1,25 @@
+.course_page{
+	margin-top: 70px;
+	background: #000;
+	height: calc(100vh - 70px);
+}
+@media screen and (min-width: 992px) {
+  .page-wrapper.toggled .page-content {
+    padding-left: 240px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .page-wrapper.toggled .page-content {
+    padding-left: 260px;
+  }
+}
+@media screen and (max-width: 767px) {
+  	.page-wrapper .page-content > div {
+    	padding: 20px 20px 20px 10px;
+	}
+}
+@media screen and (max-width: 500px) {
+  .page-wrapper.toggled .page-content {
+    padding-left: 70px;
+  }
+}

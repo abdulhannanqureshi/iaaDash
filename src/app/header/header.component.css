@@ -1,0 +1,217 @@
+	/*--------------header css-----------------*/
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+.header-main .navbar-brand {
+    color: #fff;
+    width: 240px;
+    text-align: left;
+    height: 70px;
+    font-size: 24px;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    line-height: 30px;
+    background: #0055a6;
+    padding: 15px 35px;
+    display: flex;
+    align-items: flex-end;
+    line-height: 20px;
+    margin: 0;
+}
+.header-main .navbar-brand span{
+    white-space: normal;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 15px;
+    color: #fff !important;
+}
+.header-main .navbar-brand  img{
+    height: 45px;
+}
+.nav-link.for-bedge{
+    position: relative;
+    font-size: 20px;
+}
+.nav-link.for-bedge img{
+    width: 25px;
+}
+.nav-link.for-bedge .badge-pill {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    padding: 5px 0;
+    text-align: center;
+}
+.nav-link.for-bedge .badge-pill.badge-success{
+  background-color: #00D000;
+}
+.nav-link.for-bedge .badge-pill.badge-warning{
+  background-color: red;
+  color: #fff;
+}
+.header-main .navbar-collapse {
+    padding: 0px 20px;
+}
+.dashboard-heading{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.header-main .navbar-collapse .dropdown .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header-main .navbar-collapse .dropdown .nav-link img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #FFC60F;
+    padding: 3px;
+    margin-left: 15px;
+}
+.header-main .navbar-collapse .navbar-nav{
+    align-items: center;
+}
+.p-0{
+	padding: 0;
+}
+@media screen and (max-width:991px){
+  .header-main .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    padding: 0px 8px;
+  }
+  .header-main .navbar-collapse .navbar-nav {
+    flex-direction: row;
+  }
+  .header-main .navbar-collapse .navbar-nav li{
+    margin:0 6px;
+  }
+  .header-main .navbar-collapse .dropdown .nav-link {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .nav-link.for-bedge img {
+     width: 22px;
+  }
+  .dashboard-heading {
+    font-size: 22px;
+    margin-left: 8px;
+  }
+  .header-main .navbar-brand {
+    color: #fff;
+    width: 250px;
+  }
+}
+@media screen and (max-width:767px){
+  .header-main .navbar-brand {
+    color: #fff;
+    width: 100%;
+    padding: 20px 20px;
+    display: block;
+    height: auto;
+  }
+  .header-main .navbar-collapse .dropdown .nav-link {
+    padding: 0;
+  }
+  .header-main .navbar-brand span {
+    font-size: 18px;
+    margin-left: 10px;
+    vertical-align: bottom;
+  }
+  .dashboard-heading {
+    font-size: 20px;
+  } 
+}
+@media screen and (max-width: 450px){
+  .dashboard-heading {
+    text-indent: -99999px;
+    display: inline-block;
+  }
+  .header-main .navbar-collapse .dropdown .nav-link {
+    font-size: 13px;
+  }
+}
+/**----------------header end-------------------**/
+
+
+
+
+
+.colleps-icon img {
+    width: 28px;
+    cursor: pointer;
+}
+
+/*----------Dashboard Responsive-------------*/
+@media screen and (max-width: 1200px) {
+  .white-box {
+    min-height: 300px;
+  }
+  .rate-box {
+    padding: 25px 10px;
+  }
+  .btn-dash {
+    padding: 12px 0;
+    width: 100%;
+  }
+  .tittle {
+    font-size: 22px;
+  }
+  .subtittle {
+    font-size: 14px;
+  }
+  .big-tittle {
+    font-size: 30px;
+  }
+  .rat-margin {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .section-dash .col-lg-4{
+      margin-bottom: 30px;
+  }
+  .colored-box {
+    margin: 0 0 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tittle {
+    font-size: 20px;
+  }
+  .big-tittle {
+    font-size: 26px;
+  }
+  .section-dash .col-lg-4 {
+    margin-bottom: 15px;
+  }
+  .btn-dash {
+    max-width: 100%;
+    width: 200px;
+  }
+  .colored-box h1 {
+    font-size: 32px;
+  }
+  .rate-box{
+    background-size: 100% auto;
+  } 
+}
+
+/*----------------Dashboard End-------------------*/
